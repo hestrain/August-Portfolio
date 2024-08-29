@@ -1,40 +1,24 @@
-// TODO: Add a comment explaining how we are able to extract the key value pairs from props
+import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function NavTabs({ currentPage, handlePageChange }) {
+
+function NavTabs() {
   return (
     <ul className="nav nav-tabs">
       <li className="nav-item">
-        <a
-          href="#about"
-          onClick={() => handlePageChange('About')}
-          //  TODO: Add a comment explaining what this logic is doing
-
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-        >
+      <Link className="nav-link" to="/about">
           About
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a
-          href="#Work"
-          onClick={() => handlePageChange('Work')}
-          //  TODO: Add a comment explaining what this logic is doing
-
-          className={currentPage === 'Work' ? 'nav-link active' : 'nav-link'}
-        >
+      <Link className="nav-link" to="/work">
           Work
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a
-          href="#contact"
-          //  TODO: Add a comment explaining what this logic is doing
-
-          onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-        >
+      <Link className="nav-link" to="/contact">
           Contact
-        </a>
+        </Link>
       </li>
     </ul>
   );

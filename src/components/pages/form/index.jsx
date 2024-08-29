@@ -9,6 +9,7 @@ function Form() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
+  const [username, setUsername] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
@@ -26,6 +27,8 @@ function Form() {
       setSubject(inputValue);
     } else if (inputType === "body") {
       setBody(inputValue);
+    } else if (inputType === "username") {
+      setUsername(inputValue);
     }
   };
 
@@ -40,8 +43,8 @@ function Form() {
       return;
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
-    if (!subject || !body) {
-      setErrorMessage(`Please include both a subject and a body`);
+    if (!subject || !body || !username) {
+      setErrorMessage(`Please include a subject, a body, and your name`);
       return;
     }
 
@@ -50,12 +53,13 @@ function Form() {
     // TODO: Set the password back to an empty string after the user clicks submit
     setBody("");
     setEmail("");
-    alert(`Thanks for emailing me, ${email}`);
+    setUsername("");
+    alert(`Thanks for emailing me, ${username}`);
   };
 
   return (
     <div className="container text-center">
-      <h4>Contact me directly {email}</h4>
+      <h4>Contact me directly using the form below!</h4>
       <form className="form" onSubmit={handleFormSubmit}>
         <input
           value={email}
@@ -79,6 +83,14 @@ function Form() {
           onChange={handleInputChange}
           type="text"
           placeholder="body"
+        />{" "}
+        <br></br>
+        <input
+          value={username}
+          name="username"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="your name"
         />{" "}
         <br></br>
         <button type="submit">Submit</button>

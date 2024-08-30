@@ -55,19 +55,41 @@ function Form() {
     setEmail("");
     setUsername("");
     alert(`Thanks for emailing me, ${username}`);
+    console.log(`${username} sent an email. 
+      Subject: ${subject}
+      Body: ${body}
+      Reply Address: ${email}`);
+    
   };
+
+  const formstyle = {
+    margin: "3px",
+    width: "40%",
+    borderRadius: "9px",
+    border: "2px aqua solid"
+  }
 
   return (
     <div className="container text-center">
-      <h4>Contact me directly using the form below!</h4>
-      <form className="form" onSubmit={handleFormSubmit}>
+      <h4>Or, contact me directly using the form below!</h4>
+      <form className="form"  onSubmit={handleFormSubmit}>
+      <input
+          value={username}
+          name="username"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="your name"
+          style={formstyle}
+        />
+        <br></br>
         <input
           value={email}
           name="email"
           onChange={handleInputChange}
           type="email"
           placeholder="email"
-        />{" "}
+          style={formstyle}
+        />
         <br></br>
         <input
           value={subject}
@@ -75,7 +97,8 @@ function Form() {
           onChange={handleInputChange}
           type="text"
           placeholder="subject"
-        />{" "}
+          style={formstyle}
+        />
         <br></br>
         <textarea
           value={body}
@@ -83,17 +106,10 @@ function Form() {
           onChange={handleInputChange}
           type="text"
           placeholder="body"
-        />{" "}
+          style={formstyle}
+        />
         <br></br>
-        <input
-          value={username}
-          name="username"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="your name"
-        />{" "}
-        <br></br>
-        <button type="submit">Submit</button>
+        <button type="submit" style={formstyle}>Submit</button>
       </form>
       {errorMessage && (
         <div>

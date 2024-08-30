@@ -3,6 +3,8 @@ import NavTabs from './components/NavTabs';
 import Footer from './components/Footer';
 import { Outlet} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+
 
 const App = () => {
   return (

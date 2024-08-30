@@ -11,6 +11,7 @@ function Form() {
   const [body, setBody] = useState("");
   const [username, setUsername] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [thanksMessage, setThanksMessage] = useState("");
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -23,12 +24,23 @@ function Form() {
 
     if (inputType === "email") {
       setEmail(inputValue);
+      if(!validateEmail(inputValue)) {
+        setErrorMessage(+"Email is invalid");
+        // We want to exit out of this code block if something is wrong so that the user can correct it
+        return;
+      } else {setErrorMessage("")}
+      
+      
     } else if (inputType === "subject") {
       setSubject(inputValue);
     } else if (inputType === "body") {
       setBody(inputValue);
     } else if (inputType === "username") {
       setUsername(inputValue);
+
+      if(!body || !subject ||!username ||!email){
+        setErrorMessage("All felids required");
+      }
     }
   };
 
@@ -54,7 +66,8 @@ function Form() {
     setBody("");
     setEmail("");
     setUsername("");
-    alert(`Thanks for emailing me, ${username}`);
+    setThanksMessage(`Thanks for emailing me, ${username}`)
+    // alert(`Thanks for emailing me, ${username}`);
     console.log(`${username} sent an email. 
       Subject: ${subject}
       Body: ${body}
@@ -64,21 +77,31 @@ function Form() {
 
   const formstyle = {
     margin: "3px",
-    width: "40%",
+    width: "100%",
     borderRadius: "9px",
-    border: "2px aqua solid"
+    border: "2px #76E7CD solid"
+  }
+
+  const buttonstyle = {
+    margin: "3px",
+    width: "100%",
+    borderRadius: "9px",
+    border: "2px #76E7CD solid",
+    background: "#9C528B",
+    color: "#76E7CD",
+    fontWeight: "700"
   }
 
   return (
     <div className="container text-center">
-      <h4>Or, contact me directly using the form below!</h4>
+      <p className="thanks-text">{thanksMessage}</p>
       <form className="form"  onSubmit={handleFormSubmit}>
       <input
           value={username}
           name="username"
           onChange={handleInputChange}
           type="text"
-          placeholder="your name"
+          placeholder="Name"
           style={formstyle}
         />
         <br></br>
@@ -87,7 +110,7 @@ function Form() {
           name="email"
           onChange={handleInputChange}
           type="email"
-          placeholder="email"
+          placeholder="Your Email"
           style={formstyle}
         />
         <br></br>
@@ -96,7 +119,7 @@ function Form() {
           name="subject"
           onChange={handleInputChange}
           type="text"
-          placeholder="subject"
+          placeholder="Subject"
           style={formstyle}
         />
         <br></br>
@@ -105,11 +128,11 @@ function Form() {
           name="body"
           onChange={handleInputChange}
           type="text"
-          placeholder="body"
+          placeholder="Body"
           style={formstyle}
         />
         <br></br>
-        <button type="submit" style={formstyle}>Submit</button>
+        <button type="submit" style={buttonstyle}>Submit</button>
       </form>
       {errorMessage && (
         <div>

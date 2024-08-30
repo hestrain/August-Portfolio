@@ -7,11 +7,11 @@ import Nav from 'react-bootstrap/Nav';
 
 function NavTabs() {
   return (
-    <ul className="nav nav-tabs">
+    <ul className="nav nav-tabs" style={{background: "#020300", 
+    }}>
       <div
         className="header-image"
         style={{
-          background: "black",
           alignItems: "center",
           textAlign: "center",
         }}

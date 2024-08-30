@@ -14,7 +14,7 @@ const footerstyle = {
   flexDirection: "row",
   alignContent: "center",
   justifyContent: "space-around",
-  background: "#a6f4f8",
+  background: "#020300",
   position: "relative",
   top: "96%",
   yIndex: "1px",
@@ -26,6 +26,8 @@ const listItemStyle = {
 };
 const iconstyle = {
   width: "10%",
+  backgroundColor: "white",
+  borderRadius: "9px"
 };
 
 function Footer({ currentPage, handlePageChange }) {
@@ -33,7 +35,7 @@ function Footer({ currentPage, handlePageChange }) {
     <footer>
       <ul className="" style={footerstyle}>
         <li className="footer-item" style={listItemStyle}>
-              <a href={mailto}><img
+              <a href="mailto:someone@example.com" target="_blank"><img
                 src="/src/components/images/gmail.webp"
                 style={iconstyle}
                 alt="email"

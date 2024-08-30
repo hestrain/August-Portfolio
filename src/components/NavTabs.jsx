@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../App.css";
+import { Navbar  } from "react-bootstrap";
+import Nav from 'react-bootstrap/Nav';
+
+
 
 function NavTabs() {
   return (
@@ -34,6 +37,8 @@ function NavTabs() {
         <Link className="nav-link" to="/contact">
           Contact
         </Link>
+        </li>
+        <li>
         <Link className="nav-link" to="/resume">
           Resume
         </Link>
@@ -41,5 +46,8 @@ function NavTabs() {
     </ul>
   );
 }
+
+
+
 
 export default NavTabs;

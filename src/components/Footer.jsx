@@ -36,7 +36,7 @@ function Footer({ currentPage, handlePageChange }) {
       <ul className="" style={footerstyle}>
         <li className="footer-item" style={listItemStyle}>
               <a href="mailto:someone@example.com" target="_blank"><img
-                src="/src/components/images/gmail.webp"
+                src="/src/assets/images/gmail.webp"
                 style={iconstyle}
                 alt="email"
                 title="email"
@@ -46,7 +46,7 @@ function Footer({ currentPage, handlePageChange }) {
         <li className="footer-item" style={listItemStyle}>
           <a href="https://www.linkedin.com/in/hestrain" target="_blank">
             <img
-              src="/src/components/images/linkedin.png"
+              src="/src/assets/images/linkedin.png"
               style={iconstyle}
               alt="linkedin"
               title="linkedin"
@@ -56,7 +56,7 @@ function Footer({ currentPage, handlePageChange }) {
         <li className="footer-item" style={listItemStyle}>
           <a href="https://github.com/hestrtain" target="_blank">
             <img
-              src="/src/components/images/github.png"
+              src="/src/assets/images/github.png"
               style={iconstyle}
               alt="github"
               title="github"

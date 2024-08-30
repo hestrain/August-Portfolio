@@ -12,7 +12,7 @@ export default function About() {
     <div>
             <div style={contactstyle}>
          <img
-          src="/src/components/images/about.png"
+          src="/src/assets/images/about.png"
            style={{ width: "50%" }}
           alt="About Me"
            title="About Me"
@@ -21,7 +21,7 @@ export default function About() {
        <Container>
         <Row>
 <Col>
-      <img src="/src/components/images/hestrain aug 2023 headshot.jpeg" style={{width: "80%", margin: "20px", border:"solid cyan", borderRadius: "9px" }} alt="A blonde person with white hair and a colorful shirt smiling at the camera" title="Headshot"></img>
+      <img src="/src/assets/images/hestrain aug 2023 headshot.jpeg" style={{width: "80%", margin: "20px", border:"solid cyan", borderRadius: "9px" }} alt="A blonde person with white hair and a colorful shirt smiling at the camera" title="Headshot"></img>
       </Col>
       <Col>
       <p style={{margin: "20px"}}>

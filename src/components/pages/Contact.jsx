@@ -36,7 +36,7 @@ export default function Contact() {
        <div style={{textAlign: "center"}}>
          {" "}
          <img
-           src="/src/assets/images/contactlinks2.png"
+           src="/images/contactlinks2.png"
            style={{ width: "50%" , marginTop:"20px", marginBottom: "20px"}} alt="Contact Me" title="Contact Me"
          ></img>
        </div>
@@ -47,18 +47,19 @@ export default function Contact() {
             <Card.Body>
             <ListGroup variant="flush" style={{borderRadius:"9px", border:"solid, 2px, #9C528B "}}>
               <ListGroup.Item style={{backgroundColor:"#76E7CD"}}>
-              <img src="/../src/assets/images/gmail.webp" style={{width: "30px"}}></img> <Email />
+              <img src="/images/gmail.webp" style={{width: "30px"}}></img> <Email />
               </ListGroup.Item>
               <ListGroup.Item style={{backgroundColor:"#76E7CD"}}>
                 <Card.Link
                   href="https://www.linkedin.com/in/hestrain"
                   target="_blank"
                 >
-                  <img src="/../src/assets/images/linkedin.png" style={{width: "30px"}}></img> LinkedIn
+                  <img src="/images/linkedin.png" style={{width: "30px"}}></img> LinkedIn
                 </Card.Link>
               </ListGroup.Item>
               <ListGroup.Item style={{backgroundColor:"#76E7CD"}}>
-                <Card.Link href="https://github.com/hestrain" target="_blank">                  <img src="/../src/assets/images/github.png" style={{width: "30px"}}></img> Github
+                <Card.Link href="https://github.com/hestrain" target="_blank">                  
+                <img src="/images/github.png" style={{width: "30px"}}></img> Github
                 </Card.Link>
               </ListGroup.Item>
             </ListGroup>

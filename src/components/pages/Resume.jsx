@@ -10,7 +10,7 @@ export default function Resume() {
     <Container style={{margin: "10px"}}>
       <div style={{ textAlign:"center", margin: "10px"}}>
         <img
-          src="/src/assets/images/Picture2.svg"
+          src="/images/Picture2.svg"
           alt="Resume"
           style={{ width:"60%" }}
           title="Resume"

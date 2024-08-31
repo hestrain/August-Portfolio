@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar  } from "react-bootstrap";
-import Nav from 'react-bootstrap/Nav';
+
 
 
 
@@ -17,7 +16,7 @@ function NavTabs() {
         }}
       >
         <img
-          src="/src/assets/images/HEATHER.png"
+          src="/public/images/HEATHER.png"
           style={{ maxHeight: "120px" }}
           alt="HeatherEllen Strain"
           title="HeatherEllen Strain"

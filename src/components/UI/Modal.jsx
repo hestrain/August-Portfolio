@@ -10,7 +10,7 @@ export default function ResumeModal() {
 
   return (
     <>
-      <Button style={{background:"3CBBB1"}} onClick={handleShow}>
+      <Button style={{background:"3CBBB1"}} onClick={handleShow} title='Click to Open'>
        Or, Click Me!
       </Button>
 

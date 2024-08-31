@@ -8,7 +8,7 @@ const portfolio = [
         description: "Keep track of books in your collection",
         repo:"https://github.com/hestrain/shelfie",
         live:"https://shelfie-53sl.onrender.com/",
-        img:"/./src/assets/images/shelfie screencap.png"
+        img:"/images/shelfie screencap.png"
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const portfolio = [
         description: "Search for movies and find out where they're streaming.",
         repo:"https://github.com/hestrain/mov.ie",
         live:"https://hestrain.github.io/mov.ie/",
-        img:"/./src/assets/images/movie-screencap.png"
+        img:"/images/movie-screencap.png"
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ const portfolio = [
         description: "You can look up the weather... But Watch Out! it doesn't look great",
         repo:"https://github.com/hestrain/Weather-Station",
         live:"https://hestrain.github.io/Weather-Station/",
-        img:"/./src/assets/images/weather screencap.png"
+        img:"/images/weather screencap.png"
     },
     {
         id: 4,
@@ -35,7 +35,7 @@ const portfolio = [
         description: "Made for my friends who dont like to read the whole chart ",
         repo:"https://github.com/hestrain/Pokemon-Types-2",
         live:"https://hestrain.github.io/Pokemon-Types-2/",
-        img:"/./src/assets/images/pokemon type cap.png"
+        img:"/images/pokemon type cap.png"
     },
     {
         id: 5,
@@ -44,7 +44,7 @@ const portfolio = [
         description: "its a basic blog with a dark/light theme",
         repo:"https://github.com/hestrain/my-first-blog",
         live:"https://hestrain.github.io/my-first-blog",
-        img:"/./src/assets/images/landscape-placeholder-svgrepo-com.svg"
+        img:"/images/landscape-placeholder-svgrepo-com.svg"
     },
     {
         id: 6,
@@ -53,7 +53,7 @@ const portfolio = [
         description: "TBD",
         repo:"",
         live:"",
-        img:"/./src/assets/images/landscape-placeholder-svgrepo-com.svg"
+        img:"/images/landscape-placeholder-svgrepo-com.svg"
     }
 ];
 

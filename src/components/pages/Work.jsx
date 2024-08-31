@@ -14,7 +14,7 @@ export default function Work() {
     <Container>
       <div style={contactstyle}>
         <img
-          src="/src/assets/images/portfolio3.png"
+          src="/images/portfolio3.png"
           style={{ width: "50%" }}
           alt="Portfolio"
           title="Portfolio"

@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import Mailto from "react-mailto-link";
 import Card from "react-bootstrap/Card";
-import { CardTitle, Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";

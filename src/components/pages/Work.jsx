@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import PortfolioCard from "../UI/Card/Portfolio";
 
+
 const contactstyle = {
   textAlign: "center",
   marginBottom: "20px",
@@ -13,7 +14,7 @@ export default function Work() {
     <Container>
       <div style={contactstyle}>
         <img
-          src="/src/assets/images/portfolio.png"
+          src="/src/assets/images/portfolio3.png"
           style={{ width: "50%" }}
           alt="Portfolio"
           title="Portfolio"

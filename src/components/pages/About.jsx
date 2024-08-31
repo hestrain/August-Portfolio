@@ -6,6 +6,8 @@ const contactstyle = {
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+
 
 export default function About() {
   return (
@@ -13,7 +15,7 @@ export default function About() {
             <div style={contactstyle}>
          <img
           src="/src/assets/images/about.png"
-           style={{ width: "50%" }}
+           style={{ width: "30%" }}
           alt="About Me"
            title="About Me"
         ></img>
@@ -21,13 +23,16 @@ export default function About() {
        <Container>
         <Row>
 <Col>
-      <img src="/src/assets/images/hestrain aug 2023 headshot.jpeg" style={{width: "80%", margin: "20px", border:"solid cyan", borderRadius: "9px" }} alt="A blonde person with white hair and a colorful shirt smiling at the camera" title="Headshot"></img>
+      <img src="/src/assets/images/hestrain aug 2023 headshot.jpeg" style={{width: "80%", margin: "20px", border:"solid cyan", borderRadius: "9px" }} alt="A blonde person with long hair and a colorful shirt smiling at the camera" title="Headshot"></img>
       </Col>
       <Col>
-      <p style={{margin: "20px"}}>
-      HeatherEllen Strain (she/they) is queer and disabled artist currently working in currently living Tio'tia:ke (Montreal).<br></br>
+<Card style={{margin: "20px"}}>
+      <p style={{margin:"20px"}}>
+      <strong>HeatherEllen Strain</strong> <i>(she/they)</i> is queer and disabled artist currently working in currently living Tio'tia:ke (Montreal).</p>
+      <p style={{margin:"20px"}}>
       With a background in Theatre Management, they are now pursuing web development.
       </p>
+      </Card>
 </Col>
         </Row>
        </Container>

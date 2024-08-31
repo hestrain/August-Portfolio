@@ -1,40 +1,59 @@
-const skillsstyle = {
-  margin: "20px"
-}
+import {Container} from "react-bootstrap";
+import {Card} from "react-bootstrap";
+import { Row} from "react-bootstrap";
+import {Col} from "react-bootstrap";
+import {Button} from "react-bootstrap";
+import ResumeModal from "../UI/Modal"
 
 export default function Resume() {
-  return (
-    <div style={skillsstyle}>
-      <h1>Resume</h1>
-      <h4><a href="https://drive.google.com/file/d/1weWgiDG53lFc1APFjC1xHj1LRHHSjYJW/view?usp=sharing" target="_blank">
-        Download My Resume
-      </a></h4>
-      <br></br>
-      <p>
-       <h3>Skills:</h3>
-        <ul>
-          <li>Technical Skills</li>
-          <ul>
-            <li>
-              JavaScript ES6+, CSS3, HTML5, SQL, NoSQL, GitHub, MongoDB, MySQL,
-              Express, React, Node, Handlebars, jQuery, Bootstrap
-              <li>
-                Photoshop, Microsoft Office, Google Suite, Qlab, ETC Element &
-                ETC Express lighting boards, Vectorworks
-              </li>
-            </li>
-          </ul>
-          <li>
-            Detail-oriented team-player who is passionate about databases,
-            javascript, and creating user-friendly solutions.
-            <li>
-              Strengths in explaining concepts to the non-technically-minded,
-              building efficient systems, and breaking down big ideas into
-              achievable goals.
-            </li>
-          </li>
-        </ul>
-      </p>
+  return(
+    <Container style={{margin: "10px"}}>
+      <div style={{ textAlign:"center", margin: "10px"}}>
+        <img
+          src="/src/assets/images/Picture2.svg"
+          alt="Resume"
+          style={{ width:"60%" }}
+          title="Resume"
+        ></img>
+      </div>
+      <Row>
+        <Col>
+    <Card>
+    <Card.Header>My Resume</Card.Header>
+
+    <Card.Body>
+      <Button variant="primary" href="https://drive.google.com/file/d/1weWgiDG53lFc1APFjC1xHj1LRHHSjYJW/view?usp=sharing" target="_blank">Download PDF From Google Drive</Button>
+    </Card.Body>
+  </Card>
+  </Col>
+  <Col>
+  <Card>
+      <Card.Header>Technical Skills</Card.Header>
+      <Card.Body>
+      <Card.Title>Coding Related</Card.Title>
+        <blockquote className="blockquote mb-0">
+          <p>
+            {' '}
+            JavaScript ES6+, CSS3, HTML5, SQL, NoSQL, GitHub, MongoDB, MySQL,
+              Express, React, Node, Handlebars, jQuery, Bootstrap{' '}
+          </p>
+          <Card.Title>Other</Card.Title>
+
+          <p>
+            {' '}
+            Photoshop, Microsoft Office, Google Suite, Qlab, ETC Element &
+            ETC Express lighting boards, Vectorworks{' '}
+          </p>
+        </blockquote>
+      </Card.Body>
+    </Card>
+    </Col>
+    </Row>
+    <Row>
+    <div style={{marginTop:"20px", textAlign:"center"}}>
+<ResumeModal/>
     </div>
-  );
+    </Row>
+  </Container>
+  )
 }

@@ -15,8 +15,8 @@ function Item(props) {
       <Row>
        {props.portfolio.map((project) => {
          return(
-          <Col md="6">
-    <Card style={cardstyle} key={project.id}>
+          <Col md="6" key={project.id}>
+    <Card style={cardstyle} >
       <Card.Body>
         <Card.Title>{project.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{project.kind}</Card.Subtitle>

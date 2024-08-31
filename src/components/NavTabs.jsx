@@ -18,7 +18,7 @@ function NavTabs() {
       >
         <img
           src="/src/assets/images/HEATHER.png"
-          style={{ width: "90%" }}
+          style={{ maxHeight: "120px" }}
           alt="HeatherEllen Strain"
           title="HeatherEllen Strain"
         ></img>

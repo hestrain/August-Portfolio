@@ -18,7 +18,9 @@ const footerstyle = {
   position: "relative",
   top: "96%",
   yIndex: "1px",
-  width: "100%"
+  width: "100%",
+  height: "70px",
+  padding: "15px"
 };
 
 const listItemStyle = {

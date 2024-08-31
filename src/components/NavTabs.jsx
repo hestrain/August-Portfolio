@@ -16,7 +16,7 @@ function NavTabs() {
         }}
       >
         <img
-          src="/public/images/HEATHER.png"
+          src="/images/HEATHER.png"
           style={{ maxHeight: "120px" }}
           alt="HeatherEllen Strain"
           title="HeatherEllen Strain"

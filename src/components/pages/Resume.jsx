@@ -22,7 +22,7 @@ export default function Resume() {
     <Card.Header>My Resume</Card.Header>
 
     <Card.Body>
-      <Button variant="primary" href="https://drive.google.com/file/d/1weWgiDG53lFc1APFjC1xHj1LRHHSjYJW/view?usp=sharing" target="_blank">Download PDF From Google Drive</Button>
+      <Button href="https://drive.google.com/file/d/1weWgiDG53lFc1APFjC1xHj1LRHHSjYJW/view?usp=sharing" target="_blank">Download PDF From Google Drive</Button>
     </Card.Body>
   </Card>
   </Col>

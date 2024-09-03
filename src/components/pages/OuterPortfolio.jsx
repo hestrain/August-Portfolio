@@ -14,7 +14,7 @@ export default function OuterPortfolio() {
             <button aria-label="Close" />
           </div>
         </div>
-        <div class="window-body">
+        <div className="window-body">
           <menu role="tablist">
             <li role="tab">
               <a href="/about">About</a>
@@ -29,8 +29,8 @@ export default function OuterPortfolio() {
               <a href="/resume">Resume</a>
             </li>
           </menu>
-          <div class="window" role="tabpanel">
-            <div class="window-body">
+          <div className="window" role="tabpanel">
+            <div className="window-body">
               <p>Portfolio Page</p>
               <div className="window-body">
                 <div className="field-row" style={{ justifyContent: "center" }}>

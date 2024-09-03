@@ -21,6 +21,7 @@ const App = () => {
       <Outlet />
     {/* </div> */}
   </div>
+  <div style={{height: "40px"}}></div>
   <Footer />
   </>
   );

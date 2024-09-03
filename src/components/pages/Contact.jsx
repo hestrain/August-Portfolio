@@ -30,6 +30,14 @@ const titlestyle = {
   color: "2364AA"
 }
 
+const iconstyle = {
+  width: "30px",
+  backgroundColor: "white",
+  borderRadius: "9px",
+  alignContent: "center",
+
+};
+
 export default function Contact() {
   return (
     <Container>
@@ -47,19 +55,19 @@ export default function Contact() {
             <Card.Body>
             <ListGroup variant="flush" style={{borderRadius:"9px", border:"solid, 2px, #9C528B "}}>
               <ListGroup.Item style={{backgroundColor:"#76E7CD"}}>
-              <img src="/images/gmail.webp" style={{width: "30px"}}></img> <Email />
+              <img src="/images/gmail.webp" style={iconstyle}></img> <Email />
               </ListGroup.Item>
               <ListGroup.Item style={{backgroundColor:"#76E7CD"}}>
                 <Card.Link
                   href="https://www.linkedin.com/in/hestrain"
                   target="_blank"
                 >
-                  <img src="/images/linkedin.png" style={{width: "30px"}}></img> LinkedIn
+                  <img src="/images/linkedin.png" style={iconstyle}></img> LinkedIn
                 </Card.Link>
               </ListGroup.Item>
               <ListGroup.Item style={{backgroundColor:"#76E7CD"}}>
                 <Card.Link href="https://github.com/hestrain" target="_blank">                  
-                <img src="/images/github.png" style={{width: "30px"}}></img> Github
+                <img src="/images/github.png" style={iconstyle}></img> Github
                 </Card.Link>
               </ListGroup.Item>
             </ListGroup>

@@ -1,18 +1,35 @@
 // TODO: Add a comment explaining how we are able to extract the key value pairs from props
 import React from "react";
-import Mailto from "react-mailto-link";
+import "98.css"
 
-const Email = () => {
-  return <Mailto email="hestrain@gmail.com" obfuscated={true} />;
-};
-
-const mailto = Email;
+// function Footer() {
+//   return (
+//     <>
+//     <footer>
+//     <div className="window" style="width: 300px">
+//       <div className="title-bar">
+//         <div className="title-bar-text">A Window With Stuff In It</div>
+//         <div className="title-bar-controls">
+//           <button aria-label="Minimize"></button>
+//           <button aria-label="Maximize"></button>
+//           <button aria-label="Close"></button>
+//         </div>
+//       </div>
+//       <div className="window-body">
+//         <p>There's so much room for activities!</p>
+//       </div>
+//     </div>
+//     </footer>
+//     </>
+//   );
+// }
 
 const footerstyle = {
   textAlign: "center",
   display: "flex",
   flexDirection: "row",
   alignContent: "center",
+  alignItems: "center",
   justifyContent: "space-around",
   background: "#020300",
   position: "relative",
@@ -25,27 +42,33 @@ const footerstyle = {
 
 const listItemStyle = {
   listStyleType: "none",
+  alignContent: "center",
+
 };
 const iconstyle = {
   width: "10%",
   backgroundColor: "white",
-  borderRadius: "9px"
+  borderRadius: "9px",
+  alignContent: "center",
+
 };
 
-function Footer({ currentPage, handlePageChange }) {
+function Footer() {
   return (
-    <footer>
-      <ul className="" style={footerstyle}>
-        <li className="footer-item" style={listItemStyle}>
-              <a href="mailto:someone@example.com" target="_blank"><img
-                src="/images/gmail.webp"
-                style={iconstyle}
-                alt="email"
-                title="email"
-              ></img></a>
-              {/* <Email /> */}
+    <footer style={{ alignContent: "center", justifyContent: "space-around" }}>
+      <ul classNameName="" style={footerstyle}>
+        <li classNameName="footer-item" style={listItemStyle}>
+          <a href="mailto:someone@example.com" target="_blank">
+            <img
+              src="/images/gmail.webp"
+              style={iconstyle}
+              alt="email"
+              title="email"
+            ></img>
+          </a>
+          {/* <Email /> */}
         </li>
-        <li className="footer-item" style={listItemStyle}>
+        <li classNameName="footer-item" style={listItemStyle}>
           <a href="https://www.linkedin.com/in/hestrain" target="_blank">
             <img
               src="/images/linkedin.png"
@@ -55,7 +78,7 @@ function Footer({ currentPage, handlePageChange }) {
             ></img>
           </a>
         </li>
-        <li className="footer-item" style={listItemStyle}>
+        <li classNameName="footer-item" style={listItemStyle}>
           <a href="https://github.com/hestrtain" target="_blank">
             <img
               src="/images/github.png"
@@ -69,28 +92,5 @@ function Footer({ currentPage, handlePageChange }) {
     </footer>
   );
 }
-
-// function Footer (){
-// return (
-//   <Navbar sticky="bottom" bg="light" data-bs-theme="light">
-//         <Container>
-//           <Nav className="me-auto">
-//             <Nav.Link href="https://github.com/hestrtain"target="_blank">
-//             {/* <img
-//               src="/src/components/images/github.png"
-//               style={iconstyle}
-//               alt="github"
-//               title="github"
-//             ></img> */}
-//             github
-//             </Nav.Link>
-//             <Nav.Link href="#con">Features</Nav.Link>
-//             <Nav.Link href="#pricing">Pricing</Nav.Link>
-//           </Nav>
-//         </Container>
-//   </Navbar>
-//   )
-
-// }
 
 export default Footer;

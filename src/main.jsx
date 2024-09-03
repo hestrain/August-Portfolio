@@ -4,10 +4,11 @@ import ReactDOM from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App';
-import Contact from './components/pages/Contact';
-import About from './components/pages/About';
-import Work from './components/pages/Work';
-import Resume from './components/pages/Resume';
+import OuterContact from './components/pages/OuterContact';
+import OuterAbout from './components/pages/OuterAbout';
+import OuterPortfolio from './components/pages/OuterPortfolio';
+import OuterResume from './components/pages/OuterResume';
+
 
 
 // Define the accessible routes, and which components respond to which URL
@@ -20,20 +21,21 @@ const router = createBrowserRouter([
       {
         index: true,
         path: '/about',
-        element: <About />,
+        element: <OuterAbout />,
       },
       {
-        path: '/work',
-        element: <Work />,
+        path: '/portfolio',
+        element: <OuterPortfolio />,
       },
       {
         path: '/contact',
-        element: <Contact />,
+        element: <OuterContact />,
       },
       {
         path: '/resume',
-        element: <Resume />,
+        element: <OuterResume />,
       },
+      
     ],
   },
 ]);

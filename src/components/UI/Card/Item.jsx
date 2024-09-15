@@ -11,8 +11,8 @@ const cardstyle = {
 
 function Item(props) {
   return (
-    <Container>
-      <Row>
+    <Container >
+      <Row className="scrolling-wrapper-flexbox">
        {props.portfolio.map((project) => {
          return(
           <Col md="6" key={project.id}>
@@ -21,11 +21,11 @@ function Item(props) {
         <Card.Title>{project.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{project.kind}</Card.Subtitle>
         <Card.Img variant="bottom" src={project.img} />
-        <Card.Text>
+        <Card.Text style={{fontSize:"medium"}}>
           {project.description}
         </Card.Text>
       </Card.Body>
-      <Card.Body>
+      <Card.Body style={{fontSize:"medium"}}>
         <Card.Link href={project.repo} target="_blank">Github Repo</Card.Link>
         <Card.Link href={project.live} target="_blank">Live Link</Card.Link>
       </Card.Body>
@@ -34,6 +34,7 @@ function Item(props) {
         )
        })}
        </Row>
+       <p style={{fontSize:"medium", background:"aqua"}}>Scroll here to see more!</p>
     </Container>
   );
 }

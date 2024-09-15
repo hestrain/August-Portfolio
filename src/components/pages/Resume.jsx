@@ -8,18 +8,18 @@ import ResumeModal from "../UI/Modal"
 export default function Resume() {
   return(
     <Container style={{margin: "10px"}}>
-      <div style={{ textAlign:"center", margin: "10px"}}>
+      <div style={{ textAlign:"center"}}>
         <img
-          src="/images/Picture2.svg"
+          src="/images/resume5.png"
           alt="Resume"
-          style={{ width:"60%" }}
+          style={{ width:"30%" }}
           title="Resume"
         ></img>
       </div>
       <Row>
         <Col>
     <Card>
-    <Card.Header>My Resume</Card.Header>
+    <Card.Header style={{fontSize:"large"}}>My Resume</Card.Header>
 
     <Card.Body>
       <Button href="https://drive.google.com/file/d/1weWgiDG53lFc1APFjC1xHj1LRHHSjYJW/view?usp=sharing" target="_blank">Download PDF From Google Drive</Button>
@@ -28,9 +28,9 @@ export default function Resume() {
   </Col>
   <Col>
   <Card>
-      <Card.Header>Technical Skills</Card.Header>
+      <Card.Header style={{fontSize:"large"}}>Technical Skills</Card.Header>
       <Card.Body>
-      <Card.Title>Coding Related</Card.Title>
+      <Card.Title style={{borderBottomWidth:''}}> Coding Related</Card.Title>
         <blockquote className="blockquote mb-0">
           <p>
             {' '}

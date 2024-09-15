@@ -3,10 +3,10 @@ import React from "react";
 import About from "./About";
 
 
-export default function Contact() {
+export default function OuterAbout() {
   return (
     <>
-      <div style={{}} className="window">
+      <div style={{display:"flex", flexDirection:"column", width:"80%"}} className="window">
         <div className="title-bar">
           <div className="title-bar-text">Home</div>
           <div className="title-bar-controls">
@@ -31,9 +31,7 @@ export default function Contact() {
             </li>
           </menu>
           <div className="window" role="tabpanel">
-            <div className="window-body">
-              <p>About Me Page</p>
-              <div className="window-body">
+            <div className="window-body">              <div className="window-body">
                 <div className="field-row" style={{ justifyContent: "center" }}>
                   <About />
                 </div>

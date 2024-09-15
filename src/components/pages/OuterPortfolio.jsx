@@ -5,7 +5,7 @@ import Work from "./Work"
 export default function OuterPortfolio() {
   return (
     <>
-      <div style={{}} className="window">
+      <div style={{display:"flex", flexDirection:"column", width:"80%"}} className="window">
         <div className="title-bar">
           <div className="title-bar-text">Home</div>
           <div className="title-bar-controls">
@@ -31,7 +31,6 @@ export default function OuterPortfolio() {
           </menu>
           <div className="window" role="tabpanel">
             <div className="window-body">
-              <p>Portfolio Page</p>
               <div className="window-body">
                 <div className="field-row" style={{ justifyContent: "center" }}>
                   <Work />

@@ -1,12 +1,9 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import Contact from "./Contact";
 
-
-export default function OuterContact() {
+export default function Error() {
   return (
     <>
-      <div style={{display:"flex", flexDirection:"column", width:"80%"}} className="window">
+      <div style={{width:"80%", textAlign:"center",}} className="window">
         <div className="title-bar">
           <div className="title-bar-text">Home</div>
           <div className="title-bar-controls">
@@ -23,8 +20,8 @@ export default function OuterContact() {
             <li role="tab">
               <a href="/portfolio">Portfolio</a>
             </li>
-            <li role="tab" aria-selected="true">
-              <a href="/contact" >Contact</a>
+            <li role="tab">
+              <a href="/contact">Contact</a>
             </li>
             <li role="tab">
               <a href="/resume">Resume</a>
@@ -33,8 +30,18 @@ export default function OuterContact() {
           <div className="window" role="tabpanel">
             <div className="window-body">
               <div className="window-body">
-                <div className="field-row" style={{ justifyContent: "center" }}>
-                  <Contact />
+                <div
+                  className="field-row"
+                  style={{ justifyContent: "center", flexDirection: "column" }}
+                >
+                  <p>
+                    <h1>404 ERROR: </h1>
+                  </p>
+                  <br></br>
+                  <p>
+                    <h3>Page Not Found</h3>
+                  </p>
+                  <p style={{fontSize:"medium"}}>Choose a tab above to go back to safety</p>
                 </div>
               </div>
             </div>

@@ -25,7 +25,7 @@ function Form() {
     if (inputType === "email") {
       setEmail(inputValue);
       if(!validateEmail(inputValue)) {
-        setErrorMessage(+"Email is invalid");
+        setErrorMessage("Email is invalid");
         // We want to exit out of this code block if something is wrong so that the user can correct it
         return;
       } else {setErrorMessage("")}
@@ -79,7 +79,9 @@ function Form() {
     margin: "3px",
     width: "100%",
     borderRadius: "9px",
-    border: "2px #76E7CD solid"
+    border: "2px #76E7CD solid",
+    fontSize:"medium",
+    padding:"15px"
   }
 
   const buttonstyle = {
@@ -89,13 +91,14 @@ function Form() {
     border: "2px #76E7CD solid",
     background: "#9C528B",
     color: "#76E7CD",
-    fontWeight: "700"
+    fontWeight: "700",
+    fontSize:"large"
   }
 
   return (
-    <div className="container text-center">
+    <div className="container text-center" >
       <p className="thanks-text">{thanksMessage}</p>
-      <form className="form"  onSubmit={handleFormSubmit}>
+      <form className="form"  onSubmit={handleFormSubmit} style={{fontSize:"medium"}}>
       <input
           value={username}
           name="username"
@@ -135,7 +138,7 @@ function Form() {
         <button type="submit" style={buttonstyle}>Submit</button>
       </form>
       {errorMessage && (
-        <div>
+        <div style={{fontSize:"medium"}}> 
           <p className="error-text">{errorMessage}</p>
         </div>
       )}

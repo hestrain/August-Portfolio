@@ -8,6 +8,7 @@ import OuterContact from './components/pages/OuterContact';
 import OuterAbout from './components/pages/OuterAbout';
 import OuterPortfolio from './components/pages/OuterPortfolio';
 import OuterResume from './components/pages/OuterResume';
+import Error from './components/pages/Error';
 
 
 

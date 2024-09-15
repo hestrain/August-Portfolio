@@ -5,17 +5,15 @@ import PortfolioCard from "../UI/Card/Portfolio";
 
 const contactstyle = {
   textAlign: "center",
-  marginBottom: "20px",
-  marginTop: "20px",
 };
 
 export default function Work() {
   return (
     <Container>
-      <div style={contactstyle}>
+      <div style={{textAlign:"center"}}>
         <img
-          src="/images/portfolio3.png"
-          style={{ width: "50%" }}
+          src="/images/portfolio5.png"
+          style={{ width: "30%" }}
           alt="Portfolio"
           title="Portfolio"
         ></img>

@@ -44,8 +44,8 @@ export default function Contact() {
        <div style={{textAlign: "center"}}>
          {" "}
          <img
-           src="/images/contactlinks2.png"
-           style={{ width: "50%" , marginTop:"20px", marginBottom: "20px"}} alt="Contact Me" title="Contact Me"
+           src="/images/contact4.png"
+           style={{ width: "30%"}} alt="Contact Me" title="Contact Me"
          ></img>
        </div>
       <Row>
@@ -53,11 +53,11 @@ export default function Contact() {
           <Card style={contactstyle}> 
             <Card.Title style={titlestyle}>Links</Card.Title>
             <Card.Body>
-            <ListGroup variant="flush" style={{borderRadius:"9px", border:"solid, 2px, #9C528B "}}>
-              <ListGroup.Item style={{backgroundColor:"#76E7CD"}}>
+            <ListGroup variant="flush" style={{borderRadius:"9px", border:"solid, 2px, #9C528B ", fontSize:"medium"}}>
+              <ListGroup.Item style={{}}>
               <img src="/images/gmail.webp" style={iconstyle}></img> <Email />
               </ListGroup.Item>
-              <ListGroup.Item style={{backgroundColor:"#76E7CD"}}>
+              <ListGroup.Item style={{}}>
                 <Card.Link
                   href="https://www.linkedin.com/in/hestrain"
                   target="_blank"
@@ -65,7 +65,7 @@ export default function Contact() {
                   <img src="/images/linkedin.png" style={iconstyle}></img> LinkedIn
                 </Card.Link>
               </ListGroup.Item>
-              <ListGroup.Item style={{backgroundColor:"#76E7CD"}}>
+              <ListGroup.Item style={{}}>
                 <Card.Link href="https://github.com/hestrain" target="_blank">                  
                 <img src="/images/github.png" style={iconstyle}></img> Github
                 </Card.Link>
@@ -77,7 +77,7 @@ export default function Contact() {
         <Col>
         <Card style={contactstyle}>
           <Card.Title style={titlestyle}>Or, use the form below</Card.Title>
-          <Card.Body></Card.Body>
+
           <ContactForm />
         </Card>
 

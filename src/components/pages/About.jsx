@@ -1,7 +1,6 @@
 const contactstyle = {
   textAlign: "center",
   alignItems: "center",
-  margin: "20px",
 };
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -11,21 +10,21 @@ import Card from "react-bootstrap/Card";
 
 export default function About() {
   return (
-    <div>
+    <div >
             <div style={contactstyle}>
          <img
-          src="/images/about.png"
+          src="/images/about4.png"
            style={{ width: "30%" }}
           alt="About Me"
            title="About Me"
         ></img>
        </div>
-       <Container>
-        <Row>
-<Col>
+       <Container >
+        <Row >
+<Col md="6">
       <img src="/images/hestrain aug 2023 headshot.jpeg" style={{width: "80%", margin: "20px", border:"solid cyan", borderRadius: "9px" }} alt="A blonde person with long hair and a colorful shirt smiling at the camera" title="Headshot"></img>
       </Col>
-      <Col>
+      <Col md="6">
 <Card style={{margin: "20px"}}>
       <p style={{margin:"20px"}}>
       <strong>HeatherEllen Strain</strong> <i>(she/they)</i> is queer and disabled artist currently working in currently living Tio'tia:ke (Montreal).</p>

@@ -7,6 +7,6 @@ app.use(express.json());
 const PORT = 3001;
 
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log(`Example app listening on port ${PORT}`)
   })

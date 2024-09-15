@@ -2,9 +2,9 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Footer from "./components/Footer"
+import Footer from "../public/src/components/Footer"
 import "98.css"
-import Nav from "./components/UI/Nav";
+import Nav from "../public/src/components/UI/Nav";
 
 const App = () => {
   return (

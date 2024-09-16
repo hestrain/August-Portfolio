@@ -3,7 +3,7 @@ import {Card} from "react-bootstrap";
 import { Row} from "react-bootstrap";
 import {Col} from "react-bootstrap";
 import {Button} from "react-bootstrap";
-import ResumeModal from "../components/UI/Modal"
+import ResumeModal from "../UI/Modal"
 
 export default function Resume() {
   return(

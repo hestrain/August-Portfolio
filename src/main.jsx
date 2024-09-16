@@ -4,11 +4,11 @@ import ReactDOM from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App';
-import OuterContact from './pages/OuterContact';
-import OuterAbout from './pages/OuterAbout';
-import OuterPortfolio from './pages/OuterPortfolio';
-import OuterResume from './pages/OuterResume';
-import Error from './pages/Error';
+import OuterContact from './components/pages/OuterContact';
+import OuterAbout from './components/pages/OuterAbout';
+import OuterPortfolio from './components/pages/OuterPortfolio';
+import OuterResume from './components/pages/OuterResume';
+import Error from './components/pages/Error';
 
 
 

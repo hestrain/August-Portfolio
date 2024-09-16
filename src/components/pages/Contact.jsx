@@ -1,4 +1,4 @@
-import ContactForm from "../components/form/ContactForm";
+import ContactForm from "../form/ContactForm";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import Mailto from "react-mailto-link";

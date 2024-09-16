@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
-import PortfolioCard from "../components/UI/Card/Portfolio";
+import PortfolioCard from "../UI/Card/Portfolio"
 
 
 const contactstyle = {

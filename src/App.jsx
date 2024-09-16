@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Footer from "../src/components/Footer"
+import Footer from "./components/Footer"
 import "98.css"
 
 const App = () => {

@@ -25,11 +25,18 @@ export default function About() {
       <img src="/images/hestrain aug 2023 headshot.jpeg" style={{width: "80%", margin: "20px", border:"solid cyan", borderRadius: "9px" }} alt="A blonde person with long hair and a colorful shirt smiling at the camera" title="Headshot"></img>
       </Col>
       <Col md="6">
-<Card style={{margin: "20px"}}>
-      <p style={{margin:"20px"}}>
-      <strong>HeatherEllen Strain</strong> <i>(she/they)</i> is queer and disabled artist currently working in currently living Tio'tia:ke (Montreal).</p>
-      <p style={{margin:"20px"}}>
-      With a background in Theatre Management, they are now pursuing web development.
+<Card style={{margin: "20px", }}>
+      <p style={{margin:"20px", fontFamily:"sans-serif", fontSize:"medium"}}>
+      Hello! I am <strong>HeatherEllen Strain</strong> <i>(she/they),</i> a queer and disabled artist & developer currently working and living in Tio'tia:ke (Montreal).</p>
+      <p style={{margin:"20px", fontFamily:"sans-serif", fontSize:"medium"}}>
+      I am a Full Stack web developer leveraging a background in theatre management. <br></br>
+I recently earned a certificate in Full Stack Web Development from the University of Toronto Coding Boot Camp. 
+<br></br>
+      My strengths include explaining concepts to the non-technically-minded, building efficient systems, and breaking down big ideas into achievable goals. 
+<br></br>
+I am skilled at managing large scale productions, leading a team, and working under pressure. 
+
+
       </p>
       </Card>
 </Col>

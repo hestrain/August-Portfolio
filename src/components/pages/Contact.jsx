@@ -18,7 +18,11 @@ const contactstyle = {
   marginBottom: "10px",
       borderRadius: "9px",
     border: "2px #76E7CD solid",
-    background: "#BCD2EE"
+    background: "#BCD2EE",
+    minWidth:"200px",
+margin:"10px",
+padding:"15px",
+
 };
 
 
@@ -48,8 +52,8 @@ export default function Contact() {
            style={{ width: "30%"}} alt="Contact Me" title="Contact Me"
          ></img>
        </div>
-      <Row>
-        <Col md="3">
+      <Row style={{display:"flex", alignContent:"center", justifyContent:"center",}}>
+        <Col md="4">
           <Card style={contactstyle}> 
             <Card.Title style={titlestyle}>Links</Card.Title>
             <Card.Body>
@@ -74,7 +78,7 @@ export default function Contact() {
             </Card.Body>
           </Card>
         </Col>
-        <Col>
+        <Col md="8">
         <Card style={contactstyle}>
           <Card.Title style={titlestyle}>Or, use the form below</Card.Title>
 

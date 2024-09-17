@@ -81,7 +81,8 @@ function Form() {
     borderRadius: "9px",
     border: "2px #76E7CD solid",
     fontSize:"medium",
-    padding:"15px"
+    padding:"15px",
+    fontFamily:"Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
   }
 
   const buttonstyle = {

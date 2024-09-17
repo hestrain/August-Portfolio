@@ -87,6 +87,7 @@ export default function Contact() {
 
         </Col>
       </Row>
+      <Row style={{height:"100px"}}></Row>
     </Container>
   );
 }

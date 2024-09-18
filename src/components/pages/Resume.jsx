@@ -19,27 +19,27 @@ export default function Resume() {
       <Row>
         <Col>
     <Card>
-    <Card.Header style={{fontSize:"large"}}>My Resume</Card.Header>
+    <Card.Header style={{fontSize:"large", fontFamily:"Arial, Helvetica, sans-serif"}}>My Resume</Card.Header>
 
     <Card.Body>
-      <Button href="https://drive.google.com/file/d/1weWgiDG53lFc1APFjC1xHj1LRHHSjYJW/view?usp=sharing" target="_blank">Download PDF From Google Drive</Button>
+      <Button href="https://drive.google.com/file/d/1weWgiDG53lFc1APFjC1xHj1LRHHSjYJW/view?usp=sharing" target="_blank" style={{ fontFamily:"Arial, Helvetica, sans-serif"}}>Download PDF From Google Drive</Button>
     </Card.Body>
   </Card>
   </Col>
   <Col>
   <Card>
-      <Card.Header style={{fontSize:"large"}}>Technical Skills</Card.Header>
+      <Card.Header style={{fontSize:"large", fontFamily:"Arial, Helvetica, sans-serif"}}>Technical Skills</Card.Header>
       <Card.Body>
-      <Card.Title style={{borderBottomWidth:''}}> Coding Related</Card.Title>
+      <Card.Title style={{borderBottomWidth:'', fontFamily:"Arial, Helvetica, sans-serif"}}> Coding Related</Card.Title>
         <blockquote className="blockquote mb-0">
-          <p>
+          <p style={{ fontFamily:"Arial, Helvetica, sans-serif"}}>
             {' '}
             JavaScript ES6+, CSS3, HTML5, SQL, NoSQL, GitHub, MongoDB, MySQL,
               Express, React, Node, Handlebars, jQuery, Bootstrap{' '}
           </p>
-          <Card.Title>Other</Card.Title>
+          <Card.Title style={{ fontFamily:"Arial, Helvetica, sans-serif", }}>Other</Card.Title>
 
-          <p>
+          <p style={{ fontFamily:"Arial, Helvetica, sans-serif"}}>
             {' '}
             Photoshop, Microsoft Office, Google Suite, Qlab, ETC Element &
             ETC Express lighting boards, Vectorworks{' '}

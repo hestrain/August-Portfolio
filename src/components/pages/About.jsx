@@ -26,9 +26,9 @@ export default function About() {
       </Col>
       <Col md="6">
 <Card style={{margin: "20px", }}>
-      <p style={{margin:"20px", fontFamily:"sans-serif", fontSize:"medium"}}>
+      <p style={{margin:"20px", fontFamily:"Arial, Helvetica, sans-serif", fontSize:"medium"}}>
       Hello! I am <strong>HeatherEllen Strain</strong> <i>(she/they),</i> a queer and disabled artist & developer currently working and living in Tio'tia:ke (Montreal).</p>
-      <p style={{margin:"20px", fontFamily:"sans-serif", fontSize:"medium"}}>
+      <p style={{margin:"20px", fontFamily:"Arial, Helvetica, sans-serif", fontSize:"medium"}}>
       I am a Full Stack web developer leveraging a background in theatre management. <br></br>
 I recently earned a certificate in Full Stack Web Development from the University of Toronto Coding Boot Camp. 
 <br></br>

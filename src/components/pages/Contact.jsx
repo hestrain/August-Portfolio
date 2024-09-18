@@ -22,6 +22,7 @@ const contactstyle = {
     minWidth:"200px",
 margin:"10px",
 padding:"15px",
+fontFamily:"Arial, Helvetica, sans-serif"
 
 };
 

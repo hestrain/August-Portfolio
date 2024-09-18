@@ -7,6 +7,7 @@ const cardstyle = {
   marginBottom: "15px",
   border: "solid 2px cyan",
   alignSelf: "center",
+  fontFamily:"Arial, Helvetica, sans-serif"
 };
 
 function Item(props) {

@@ -30,13 +30,13 @@ const portfolio = [
   },
   {
     id: 4,
-    title: "Awful Weather Dashboard",
+    title: "Dog Care Guide",
     kind: "Solo",
     description:
-      "You can look up the weather... But Watch Out! it doesn't look great",
-    repo: "https://github.com/hestrain/Weather-Station",
-    live: "https://hestrain.github.io/Weather-Station/",
-    img: "/images/weather screencap.png",
+      "A website with instructions for how to take care of my dog. Also includes her trick reel.",
+    repo: "https://github.com/hestrain/Paprika-Care-Guide",
+    live: "https://paprika-care-guide-1.onrender.com/",
+    img: "/images/paprika screencap.png",
   },
   {
     id: 5,

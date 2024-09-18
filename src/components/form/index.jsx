@@ -82,7 +82,7 @@ function Form() {
     border: "2px #76E7CD solid",
     fontSize:"medium",
     padding:"15px",
-    fontFamily:"Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
+    fontFamily:"Arial, Helvetica, sans-serif"
   }
 
   const buttonstyle = {
@@ -93,7 +93,8 @@ function Form() {
     background: "#9C528B",
     color: "#76E7CD",
     fontWeight: "700",
-    fontSize:"large"
+    fontSize:"large",
+    fontFamily:"Arial, Helvetica, sans-serif"
   }
 
   return (

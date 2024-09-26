@@ -79,7 +79,7 @@ function Form() {
     margin: "3px",
     width: "100%",
     borderRadius: "9px",
-    border: "2px #76E7CD solid",
+    border: "2px black solid",
     fontSize:"medium",
     padding:"15px",
     fontFamily:"Arial, Helvetica, sans-serif"
@@ -89,10 +89,10 @@ function Form() {
     margin: "3px",
     width: "100%",
     borderRadius: "9px",
-    border: "2px #76E7CD solid",
-    background: "#9C528B",
-    color: "#76E7CD",
-    fontWeight: "700",
+    border: "2px navy solid",
+    background: "black",
+    color: "aliceBlue",
+    fontWeight: "600",
     fontSize:"large",
     fontFamily:"Arial, Helvetica, sans-serif"
   }

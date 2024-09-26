@@ -11,7 +11,7 @@ export default function ResumeModal() {
   return (
     <>
       <Button style={{background:"3CBBB1", fontFamily:"Arial, Helvetica, sans-serif"}} onClick={handleShow} title='Click to Open'>
-       Or, Click Me!
+       Or, Click to View!
       </Button>
 
       <Modal  size="lg" show={show} onHide={handleClose}>

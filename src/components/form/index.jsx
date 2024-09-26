@@ -24,13 +24,13 @@ function Form() {
 
     if (inputType === "email") {
       setEmail(inputValue);
-      if(!validateEmail(inputValue)) {
+      if (!validateEmail(inputValue)) {
         setErrorMessage("Email is invalid");
         // We want to exit out of this code block if something is wrong so that the user can correct it
         return;
-      } else {setErrorMessage("")}
-      
-      
+      } else {
+        setErrorMessage("");
+      }
     } else if (inputType === "subject") {
       setSubject(inputValue);
     } else if (inputType === "body") {
@@ -38,7 +38,7 @@ function Form() {
     } else if (inputType === "username") {
       setUsername(inputValue);
 
-      if(!body || !subject ||!username ||!email){
+      if (!body || !subject || !username || !email) {
         setErrorMessage("All felids required");
       }
     }
@@ -66,13 +66,12 @@ function Form() {
     setBody("");
     setEmail("");
     setUsername("");
-    setThanksMessage(`Thanks for emailing me, ${username}`)
+    setThanksMessage(`Thanks for emailing me, ${username}`);
     // alert(`Thanks for emailing me, ${username}`);
     console.log(`${username} sent an email. 
       Subject: ${subject}
       Body: ${body}
       Reply Address: ${email}`);
-    
   };
 
   const formstyle = {
@@ -80,10 +79,10 @@ function Form() {
     width: "100%",
     borderRadius: "9px",
     border: "2px black solid",
-    fontSize:"medium",
-    padding:"15px",
-    fontFamily:"Arial, Helvetica, sans-serif"
-  }
+    fontSize: "medium",
+    padding: "15px",
+    fontFamily: "Arial, Helvetica, sans-serif",
+  };
 
   const buttonstyle = {
     margin: "3px",
@@ -93,15 +92,19 @@ function Form() {
     background: "black",
     color: "aliceBlue",
     fontWeight: "600",
-    fontSize:"large",
-    fontFamily:"Arial, Helvetica, sans-serif"
-  }
+    fontSize: "large",
+    fontFamily: "Arial, Helvetica, sans-serif",
+  };
 
   return (
-    <div className="container text-center" >
+    <div className="container text-center">
       <p className="thanks-text">{thanksMessage}</p>
-      <form className="form"  onSubmit={handleFormSubmit} style={{fontSize:"medium"}}>
-      <input
+      <form
+        className="form"
+        onSubmit={handleFormSubmit}
+        style={{ fontSize: "medium" }}
+      >
+        <input
           value={username}
           name="username"
           onChange={handleInputChange}
@@ -137,10 +140,12 @@ function Form() {
           style={formstyle}
         />
         <br></br>
-        <button type="submit" style={buttonstyle}>Submit</button>
+        <button type="submit" style={buttonstyle}>
+          Submit
+        </button>
       </form>
       {errorMessage && (
-        <div style={{fontSize:"medium"}}> 
+        <div style={{ fontSize: "medium" }}>
           <p className="error-text">{errorMessage}</p>
         </div>
       )}

@@ -1,4 +1,4 @@
-import Form from './index';
+import Form from "./index";
 
 function ContactForm() {
   return <Form />;

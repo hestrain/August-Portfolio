@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
 export default function ResumeModal() {
   const [show, setShow] = useState(false);
@@ -10,15 +10,33 @@ export default function ResumeModal() {
 
   return (
     <>
-      <Button style={{background:"3CBBB1", fontFamily:"Arial, Helvetica, sans-serif"}} onClick={handleShow} title='Click to Open'>
-       Or, Click to View!
+      <Button
+        style={{
+          background: "3CBBB1",
+          fontFamily: "Arial, Helvetica, sans-serif",
+        }}
+        onClick={handleShow}
+        title="Click to Open"
+      >
+        Or, Click to View!
       </Button>
 
-      <Modal  size="lg" show={show} onHide={handleClose}>
+      <Modal size="lg" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Full Resume</Modal.Title>
         </Modal.Header>
-        <Modal.Body> <iframe src="https://docs.google.com/document/d/1mFqj2ADuve63dSw5hCTL6esc20IDoPmeLhE4TTBtI_U/edit#heading=h.jl50kwavsrpr" style={{ width: '100%', height: '1000px' , textAlign:"center", alignself:"center"}}/></Modal.Body>
+        <Modal.Body>
+          {" "}
+          <iframe
+            src="https://docs.google.com/document/d/1mFqj2ADuve63dSw5hCTL6esc20IDoPmeLhE4TTBtI_U/edit#heading=h.jl50kwavsrpr"
+            style={{
+              width: "100%",
+              height: "1000px",
+              textAlign: "center",
+              alignself: "center",
+            }}
+          />
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
@@ -28,4 +46,3 @@ export default function ResumeModal() {
     </>
   );
 }
-

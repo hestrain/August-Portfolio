@@ -4,10 +4,8 @@ import ReactDOM from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App';
-import OuterContact from './components/pages/OuterContact';
-import OuterAbout from './components/pages/OuterAbout';
-import OuterPortfolio from './components/pages/OuterPortfolio';
-import OuterResume from './components/pages/OuterResume';
+import Contact from './components/pages/Contact';
+import Home from './components/pages/About';
 import Error from './components/pages/Error';
 
 
@@ -21,23 +19,15 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <OuterAbout />,
+        element: <Home />,
       },
       {
-        path: '/about',
-        element: <OuterAbout />,
-      },
-      {
-        path: '/portfolio',
-        element: <OuterPortfolio />,
+        path: '/home',
+        element: <Home />,
       },
       {
         path: '/contact',
-        element: <OuterContact />,
-      },
-      {
-        path: '/resume',
-        element: <OuterResume />,
+        element: <Contact />,
       },
       
     ],

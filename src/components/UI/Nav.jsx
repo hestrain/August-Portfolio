@@ -1,15 +1,19 @@
-import React from "react";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-export default function Nav () {
-    return(
-        <>
-         <div style={{textAlign: "center"}}>
-         {" "}
-         <img
-           src="/images/heatherellen strain.png"
-           style={{ width: "50%" , marginTop:"20px"}} alt="HeatherEllen Strain" title="HeatherEllen Strain"
-         ></img>
-       </div>
-        </>
-    )
+export default function ColorSchemesExample() {
+  return (
+    <>
+      <Navbar bg="dark" data-bs-theme="dark" fixed='top'>
+        <Container>
+          <Navbar.Brand href="#Portfolio">HeatherEllen Strain</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/contact">Resume & Contact</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+      </>
+  )
 }

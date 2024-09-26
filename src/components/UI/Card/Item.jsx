@@ -5,37 +5,46 @@ import {Row} from 'react-bootstrap'
 const cardstyle = {
   padding: "10px",
   marginBottom: "15px",
-  border: "solid 2px cyan",
+  border: "solid 2px black",
   alignSelf: "center",
   fontFamily:"Arial, Helvetica, sans-serif"
 };
 
+const linkStyle = {
+  textDecoration: "none",
+  color: "navy",
+  fontWeight:"700",
+  borderLeft:"2px solid blue",
+  padding:"10px"
+
+}
+
 function Item(props) {
   return (
     <Container >
-      <Row className="scrolling-wrapper-flexbox">
+      <Row>
        {props.portfolio.map((project) => {
          return(
-          <Col md="6" key={project.id}>
-    <Card style={cardstyle} >
+    <Card style={cardstyle} key={project.id} >
       <Card.Body>
         <Card.Title>{project.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{project.kind}</Card.Subtitle>
         <Card.Img variant="bottom" src={project.img} />
+        <h5>Description</h5>
         <Card.Text style={{fontSize:"medium"}}>
           {project.description}
         </Card.Text>
+        <h5>Tools Used</h5>
+        <Card.Text>{project.tools}</Card.Text>
       </Card.Body>
       <Card.Body style={{fontSize:"medium"}}>
-        <Card.Link href={project.repo} target="_blank">Github Repo</Card.Link>
-        <Card.Link href={project.live} target="_blank">Live Link</Card.Link>
+        <Card.Link href={project.repo} target="_blank" style={linkStyle}>Github Repo</Card.Link>
+        <Card.Link href={project.live} target="_blank" style={linkStyle}>Live Site</Card.Link>
       </Card.Body>
     </Card>
-    </Col>
         )
        })}
        </Row>
-       <p style={{fontSize:"medium", background:"aqua"}}>Scroll here to see more!</p>
     </Container>
   );
 }

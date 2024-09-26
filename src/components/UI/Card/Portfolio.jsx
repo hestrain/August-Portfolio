@@ -47,7 +47,7 @@ const portfolio = [
     title: "Blog",
     kind: "Solo",
     description: "its a basic blog with a dark/light theme",
-    tools:"Node.js, Bootstrap",
+    tools:["Node.js", "Bootstrap"],
     repo: "https://github.com/hestrain/my-first-blog",
     live: "https://hestrain.github.io/my-first-blog",
     img: "/images/blog screencap.png",

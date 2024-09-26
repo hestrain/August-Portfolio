@@ -25,6 +25,8 @@ function Item(props) {
       <Row>
        {props.portfolio.map((project) => {
          return(
+          <Col md="6">
+
     <Card style={cardstyle} key={project.id} >
       <Card.Body>
         <Card.Title>{project.title}</Card.Title>
@@ -42,6 +44,8 @@ function Item(props) {
         <Card.Link href={project.live} target="_blank" style={linkStyle}>Live Site</Card.Link>
       </Card.Body>
     </Card>
+    </Col>
+
         )
        })}
        </Row>

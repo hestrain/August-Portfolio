@@ -46,7 +46,7 @@ export default function Contact() {
   return (
     <Container>
       <Row style={{ height: "100px" }}></Row>
-      <h1>Resume & Contact</h1>
+      <h1>Resume</h1>
 
       <Container style={{ margin: "10px" }}>
         <Row>
@@ -94,6 +94,7 @@ export default function Contact() {
 
           <Card style={{ marginTop: "10px" }}>
             <Card.Header
+            id="Resume"
               style={{
                 fontSize: "large",
                 fontFamily: "Arial, Helvetica, sans-serif",
@@ -126,7 +127,7 @@ export default function Contact() {
       >
         {/* contact links */}
         <Col md="4">
-          <Card style={contactstyle}>
+          <Card style={contactstyle} id="Contact">
             <Card.Title style={titlestyle}>Contact Links</Card.Title>
             <Card.Body>
               <ListGroup

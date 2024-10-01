@@ -14,6 +14,8 @@ export default function About() {
                 margin: "10px",
                 fontFamily: "Arial, Helvetica, sans-serif",
                 fontSize: "medium",
+                margin:"15px",
+                padding:"15px"
               }}
             >
               <p>

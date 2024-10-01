@@ -56,3 +56,12 @@ border: 2px solid aquamarine;
   max-width: 50px;
   min-width: 30px;
 }
+
+.homePage {
+  font-size: 100px;
+}
+
+.sectionHeading {
+  margin: 20px;
+  font-weight: 500;
+}

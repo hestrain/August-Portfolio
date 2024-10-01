@@ -10,6 +10,7 @@ const portfolio = [
     repo: "https://github.com/jreeve65/Cosmic-Quest",
     live: "https://cosmic-quest.onrender.com/",
     img: "/images/cq.png",
+    gif:"/images/cqGif.gif"
   },
   {
     id: 2,
@@ -58,6 +59,7 @@ const portfolio = [
     repo: "https://github.com/hestrain/mov.ie",
     live: "https://hestrain.github.io/mov.ie/",
     img: "/images/movie-screencap.png",
+    gif: "/images/mov.ie.gif",
   },
   {
     id: 5,
@@ -66,8 +68,9 @@ const portfolio = [
     description: "its a basic blog with a dark/light theme",
     tools: ["Node.js", "Bootstrap"],
     repo: "https://github.com/hestrain/my-first-blog",
-    live: "https://hestrain.github.io/my-first-blog",
+    live: "https://hestrain.github.io/My-First-Blog",
     img: "/images/blog screencap.png",
+    gif: "/images/blog.gif",
   },
   {
     id: 6,
@@ -78,6 +81,7 @@ const portfolio = [
     repo: "https://github.com/hestrain/Pokemon-Types-2",
     live: "https://hestrain.github.io/Pokemon-Types-2/",
     img: "/images/pokemon type cap.png",
+    gif: "/images/pokemon.gif",
   },
 ];
 

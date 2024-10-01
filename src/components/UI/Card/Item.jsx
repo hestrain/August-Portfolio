@@ -9,6 +9,7 @@ const cardstyle = {
   alignSelf: "center",
   fontFamily: "Arial, Helvetica, sans-serif",
   backgroundColor: "black",
+  margin: "15px",
 };
 
 const linkStyle = {
@@ -25,14 +26,22 @@ function Item(props) {
       <Row>
         {props.portfolio.map((project) => {
           const tools = project.tools;
-          return (
+          let projectImg = "";
+
+          if (!project.gif) {
+            projectImg = project.img;
+          } else {
+            projectImg = project.gif;
+          }
+           return (
             <Col md="6">
               <Card style={cardstyle} key={project.id}>
                 <Card.Body>
                   <Card.Img
                     variant="top"
-                    style={{ border: "solid aliceBlue 1px" }}
-                    src={project.img}
+                    style={{ border: "solid aliceBlue 1px",
+                     }}
+                    src={projectImg}
                     className="portfolioItem"
                   />
                   <Row>

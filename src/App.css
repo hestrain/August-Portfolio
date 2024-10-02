@@ -1,7 +1,16 @@
 * {
     font-family:Arial, Helvetica, sans-serif;
     color: azure;
+}
 
+:root{
+  /* CSS HEX */
+--licorice: rgb(35, 35, 43);
+--dark-goldenrod: #BE8D27ff;
+--delft-blue: #223757ff;
+--dark-slate-gray: #2F585Cff;
+--lighter: rgb(115, 222, 231);
+--cardinal: #C93045ff;
 }
 
 a {
@@ -9,7 +18,7 @@ a {
 }
 
 body {
-  background-color: rgb(45, 46, 57);
+  background-color: var(--licorice);
   font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -63,5 +72,16 @@ border: 2px solid aquamarine;
 
 .sectionHeading {
   margin: 20px;
-  font-weight: 500;
+  font-weight: 600;
+}
+
+
+.darkBG {
+  background-color: var(--licorice);
+  color: var(--lighter);
+}
+
+.lightBG {
+  background-color: var(--lighter);
+  color: var(--licorice);
 }

@@ -36,7 +36,7 @@ function ContactForm() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button className='contactBtn' onClick={handleShow}>
         Contact Me 
       </Button>
 
@@ -45,42 +45,23 @@ function ContactForm() {
           <Modal.Title>Contact Form</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-{/* <Form className='lightBG' noValidate validated={validated} onSubmit={onSubmit}>
-<Form.Group className="mb-3 lightBG" controlId="contactForm.email">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="name@example.com"
-                autoFocus
-              />
-            </Form.Group>
-            <Form.Group
-              className="mb-3"
-              controlId="contactForm.text"
-            >
-              <Form.Label>Please write your message Here</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
-</Form> */}
 
-        {/* <div>
-      <form onSubmit={onSubmit}>
-        <input type="text" name="name" required/>
-        <input type="email" name="email" required/>
-        <textarea name="message" required></textarea>
+        <div className='lightBG' >
+      <form onSubmit={onSubmit} className='contactForm'>
+        <label for="cName">Name</label>
+        <input id="cName" style={{color:"black"}} type="text" name="name" required/>
+        <label for="cEmail">Email Address</label>
+        <input id="cEmail" type="email" name="email" required/>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
 
-        <button type="submit">Submit Form</button>
+        <button className="contactBtn submitBtn" type="submit">Submit Form</button>
 
       </form>
       <span>{result}</span>
 
-    </div> */}
-<p className='lightBG'>
+    </div>
 
-    Oops! 
-    <br></br>
-    This isn't available right now! Please Check back later
-</p>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

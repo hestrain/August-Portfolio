@@ -34,12 +34,24 @@ export default function Home() {
             border: "4px aliceBlue solid",
           }}
         ></img>
-        <h1 style={{ fontWeight: "800", paddingTop: "30px" }}>
+        <h1 style={{ fontWeight: "800", paddingTop: "30px" }} className="introText">
           HeatherEllen Strain
         </h1>
-        <h3>Web Developer / Production Manager</h3>
+        <h3 className="introText">Web Developer / Production Manager</h3>
+{/* -------------------------links sections ------------------------------------*/}
+<div style={{marginTop:"40px"}}>
+  <Row style={{justifyContent:"center"}}>
+
+  <a href="https://www.github.com/hestrain" target="blank" className="topLink">Github</a>
+
+ <a href="https://www.linkedin.com/in/hestrain" target="blank" className="topLink">LinkedIn</a> 
+<a href="mailto:hestrain@gmail.com" target="blank" className="topLink">Email</a>
+  </Row>
+</div>
       </div>
       </div>
+
+
       {/* ---------------------   about section    ------------------------------ */}
         <div id="about" style={{height:"50px"}}></div>
         <div className="darkBG">
@@ -70,7 +82,7 @@ export default function Home() {
               I've always loved working with technology, having taken every
               programming course my high school offered. Out of high school I
               originally ent into Theatre because I loved programming Lighting
-              Boards. Once I as at Concordia Univeristy, I found my stride in
+              Boards. Once I as at Concordia University, I found my stride in
               stage management, loving both building complex detailed paperwork,
               and being able to lead a team through to a final polished
               production. I've been working in the Montreal Theatre scene for
@@ -106,8 +118,8 @@ export default function Home() {
           <Row>
           <div id="portfolio" style={{height:"50px"}}></div>
 
-            <h1 className="sectionHeading">
-              Portoflio
+            <h1 className="sectionHeading introText">
+              Portfolio
             </h1>
             <PortfolioCard />
           </Row>
@@ -139,6 +151,7 @@ export default function Home() {
               width: "40%",
               margin: "5px 20px",
             }}
+            className="resumeLink"
           >
             Download from Google Drive
           </Button>

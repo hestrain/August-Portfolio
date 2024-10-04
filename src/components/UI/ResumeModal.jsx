@@ -17,6 +17,7 @@ export default function ResumeModal() {
           width:"40%",
           margin:"5px 20px"
         }}
+        className="resumeLink"
         onClick={handleShow}
         title="Click to Open"
       >

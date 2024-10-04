@@ -13,7 +13,7 @@ import ResumeModal from "../UI/ResumeModal";
 
 export default function Home() {
   return (
-    <div>
+    <>
       {/* ---------------------   top section    ------------------------------ */}
 <div className="lightBG"> 
       <div id="top" style={{ height: "100px" }}></div>
@@ -38,9 +38,10 @@ export default function Home() {
           HeatherEllen Strain
         </h1>
         <h3 className="introText">Web Developer / Production Manager</h3>
+      </div>
 {/* -------------------------links sections ------------------------------------*/}
-<div style={{marginTop:"40px"}}>
-  <Row style={{justifyContent:"center"}}>
+<div style={{marginTop:"40px", backgroundColor:"#2F585Cff"}}>
+  <Row style={{justifyContent:"center", textAlign:"center"}}>
 
   <a href="https://www.github.com/hestrain" target="blank" className="topLink">Github</a>
 
@@ -48,7 +49,6 @@ export default function Home() {
 <a href="mailto:hestrain@gmail.com" target="blank" className="topLink">Email</a>
   </Row>
 </div>
-      </div>
       </div>
 
 
@@ -134,17 +134,13 @@ export default function Home() {
         Resume
       </h1>
 
-      <Container style={{ margin: "10px" }}>
-        <Row
-          style={{
-            display: "flex",
+      <Row style={{ margin: "10px", display: "flex",
             alignContent: "center",
             justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+            alignItems: "center"}}>
+        
           <Button
-            href="https://drive.google.com/file/d/1weWgiDG53lFc1APFjC1xHj1LRHHSjYJW/view?usp=sharing"
+            href="https://drive.google.com/file/d/1fwVrlMwtlkQM-cUB1L6OH9I4pxgh4DNR/view?usp=sharing"
             target="_blank"
             style={{
               fontFamily: "Arial, Helvetica, sans-serif",
@@ -157,10 +153,10 @@ export default function Home() {
           </Button>
 
           <ResumeModal />
-        </Row>
-      </Container>
+      </Row>
       </div>
       <Row style={{ height: "100px" }}></Row>
-    </div>
+    </>
+
   );
 }

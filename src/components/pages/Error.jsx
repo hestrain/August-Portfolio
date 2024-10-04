@@ -1,11 +1,10 @@
 import React from "react";
-import Nav from "../UI/Nav";
 import { Container } from "react-bootstrap";
+import Footer from "../Footer"
 
 export default function Error() {
   return (
     <>
-      <Nav />
       <Container style={{ height: "100px" }}></Container>
       <Container>
         <p>
@@ -17,13 +16,17 @@ export default function Error() {
         </p>
         <p
           style={{
-            fontSize: "medium",
+            fontSize: "x-large",
             fontFamily: "Arial, Helvetica, sans-serif",
           }}
         >
-          Choose a tab above to go back to safety
+          <a href="/">
+          Click here to go back to safety
+          </a>
         </p>
       </Container>
+      <div style={{height:"200px"}}></div>
+      <Footer />
     </>
   );
 }

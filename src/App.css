@@ -8,7 +8,7 @@
 --licorice: rgb(35, 35, 43);
 --dark-goldenrod: #BE8D27ff;
 --delft-blue: #223757ff;
---dark-slate-gray: #2F585Cff;
+--dark-slate-gray: rgb(46, 88, 92);
 --lighter: rgb(115, 222, 231);
 --cardinal: #C93045ff;
 }
@@ -43,14 +43,13 @@ body {
 }
 
 .align {
-  min-width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
 .footerImg {
-  width: 60%;
+  width: 80%;
   border-radius: 9px;
 }
 
@@ -93,7 +92,7 @@ border: 2px solid aquamarine;
   text-decoration: none;
   border: solid 3px aliceblue;
   max-width: 100px;
-  margin: 5px 20px;
+  margin: 15px 20px;
   font-weight: 600;
 }
 .resumeLink {
@@ -112,7 +111,7 @@ border: 2px solid aquamarine;
   color: var(--delft-blue);
   border: 2px var(--dark-slate-gray) solid;
   font-weight: 900;
-  box-shadow: 10px 5px 5px var(--dark-slate-gray);
+  box-shadow: 10px 5px 5px var(--delft-blue);
   text-shadow: 2px 2px var(--dark-goldenrod);
 }
 
@@ -145,7 +144,7 @@ flex-direction: row;
 
 .navRight {
   position: fixed;
-  right: 20px;
+  right: 30px;
 }
 
 .contactBtn {
@@ -178,4 +177,27 @@ form textarea, form input {
 .submitBtn {
   margin: 20px 0px 10px;
   border-radius: 10px;
+}
+
+.portfolioLink {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 700;
+  border-left: 2px solid aliceblue;
+  padding: 10px;
+}
+.portfolioLink:hover {
+  color: var(--lighter);
+  font-weight: 700;
+  border-left: 2px solid var(--lighter);
+  border-bottom: 2px solid var(--lighter);
+  padding: 10px;
+}
+
+.portfolioCard {
+  padding: 10px;
+  margin: 15px 15px 30px;
+  border: solid 5px var(--delft-blue);
+  align-self: center;
+  background-color: var(--delft-blue);
 }

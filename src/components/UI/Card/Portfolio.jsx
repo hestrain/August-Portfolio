@@ -46,9 +46,9 @@ const portfolio = [
     description:
       "Automated tool for Stage Managers, Stage Supervisors, Front of House Managers etc to turn a google form report of an event into a ready-to-send PDF",
     tools: ["Google Apps Script"],
-    repo: "",
+    repo: "https://github.com/hestrain/Gdrive-Form-Sheet-Pdf-Email",
     live: "",
-    img: "",
+    gif: "/images/form2PDF.gif",
   },
   {
     id: 3,

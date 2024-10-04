@@ -2,23 +2,23 @@ import Card from "react-bootstrap/Card";
 import { Col } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
-const cardstyle = {
-  padding: "10px",
-  marginBottom: "15px",
-  border: "solid 5px black",
-  alignSelf: "center",
-  fontFamily: "Arial, Helvetica, sans-serif",
-  backgroundColor: "black",
-  margin: "15px",
-};
+// const cardstyle = {
+//   padding: "10px",
+//   marginBottom: "15px",
+//   border: "solid 5px black",
+//   alignSelf: "center",
+//   fontFamily: "Arial, Helvetica, sans-serif",
+//   backgroundColor: "black",
+//   margin: "15px",
+// };
 
-const linkStyle = {
-  textDecoration: "none",
-  color: "aliceBlue",
-  fontWeight: "700",
-  borderLeft: "2px solid aliceBlue",
-  padding: "10px",
-};
+// const linkStyle = {
+//   textDecoration: "none",
+//   color: "aliceBlue",
+//   fontWeight: "700",
+//   borderLeft: "2px solid aliceBlue",
+//   padding: "10px",
+// };
 
 function Item(props) {
   return (
@@ -35,7 +35,7 @@ function Item(props) {
           }
            return (
             <Col md="6">
-              <Card style={cardstyle} key={project.id}>
+              <Card className="portfolioCard" key={project.id}>
                 <Card.Body>
                   <Card.Img
                     variant="top"
@@ -65,7 +65,7 @@ function Item(props) {
                   <Card.Link
                     href={project.repo}
                     target="_blank"
-                    style={linkStyle}
+                    className="portfolioLink"
                   >
                     <img
                       src="/images/github.png"
@@ -79,7 +79,7 @@ function Item(props) {
                   <Card.Link
                     href={project.live}
                     target="_blank"
-                    style={linkStyle}
+                    className="portfolioLink"
                   >
                     Live Site
                   </Card.Link>

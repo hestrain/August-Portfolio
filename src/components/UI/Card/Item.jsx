@@ -2,6 +2,8 @@ import Card from "react-bootstrap/Card";
 import { Col } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
+import React, { useState, } from "react";
+import ReactCardFlip from "react-card-flip";
 
 function Item(props) {
   return (
@@ -17,8 +19,11 @@ function Item(props) {
             projectImg = project.gif;
           }
           let x = 1;
+            const [flip, setFlip] = useState(false);
+
           return (
             <Col md="6" key={project.id}>
+              <ReactCardFlip isFlipped={flip} flipDirection="vertical">
               <Card className="portfolioCard" key={project.id}>
                 <Card.Body>
                   <Card.Img
@@ -68,8 +73,17 @@ function Item(props) {
                   >
                     Live Site
                   </Card.Link>
+                  <button className="flipbtn" onClick={() => setFlip(!flip)}>
+          Flip for more info
+        </button>
                 </Card.Body>
               </Card>
+              <Card>
+              <button className="flipbtn" onClick={() => setFlip(!flip)}>              
+              Flip for more info
+              </button>
+              </Card>
+              </ReactCardFlip>
             </Col>
           );
         })}

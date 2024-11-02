@@ -201,3 +201,7 @@ form textarea, form input {
   align-self: center;
   background-color: var(--delft-blue);
 }
+
+.langList {
+  display: inline;
+}

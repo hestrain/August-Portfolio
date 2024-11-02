@@ -2,23 +2,6 @@ import Card from "react-bootstrap/Card";
 import { Col } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
-// const cardstyle = {
-//   padding: "10px",
-//   marginBottom: "15px",
-//   border: "solid 5px black",
-//   alignSelf: "center",
-//   fontFamily: "Arial, Helvetica, sans-serif",
-//   backgroundColor: "black",
-//   margin: "15px",
-// };
-
-// const linkStyle = {
-//   textDecoration: "none",
-//   color: "aliceBlue",
-//   fontWeight: "700",
-//   borderLeft: "2px solid aliceBlue",
-//   padding: "10px",
-// };
 
 function Item(props) {
   return (
@@ -33,14 +16,14 @@ function Item(props) {
           } else {
             projectImg = project.gif;
           }
-           return (
-            <Col md="6">
+          let x = 1;
+          return (
+            <Col md="6" key={project.id}>
               <Card className="portfolioCard" key={project.id}>
                 <Card.Body>
                   <Card.Img
                     variant="top"
-                    style={{ border: "solid aliceBlue 1px",
-                     }}
+                    style={{ border: "solid aliceBlue 1px" }}
                     src={projectImg}
                     className="portfolioItem"
                   />
@@ -53,13 +36,15 @@ function Item(props) {
                   <Card.Text style={{ fontSize: "medium" }}>
                     {project.description}
                   </Card.Text>
-                  <Card.Text>
-                    <p>
-                      {tools.map((tool) => {
-                        return <>{tool}, </>;
-                      })}
-                    </p>
-                  </Card.Text>
+
+                  {tools.map((tool) => {
+                    x++;
+                    return (
+                      <div className="langList" key={x}>
+                        {tool},{" "}
+                      </div>
+                    );
+                  })}
                 </Card.Body>
                 <Card.Body style={{ fontSize: "medium" }}>
                   <Card.Link
@@ -92,6 +77,5 @@ function Item(props) {
     </Container>
   );
 }
-
 
 export default Item;

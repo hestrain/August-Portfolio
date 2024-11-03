@@ -48,7 +48,7 @@ const portfolio = [
       "Automated tool for Stage Managers, Stage Supervisors, Front of House Managers etc to turn a google form report of an event into a ready-to-send PDF",
     tools: ["Google Apps Script"],
     repo: "https://github.com/hestrain/Gdrive-Form-Sheet-Pdf-Email",
-    live: "",
+    live: "https://drive.google.com/drive/folders/1Ty4JhF2NQM2zlWtgJJd89LFKqXWciVCu",
     gif: "/images/form2PDF.gif",
     more: "Born out of necessity. My workplace was using a word doc from 2011 to do front of house and stage supervisor reports for the events. The staff were finding it very hard to use on their phone (as no one brings laptops to the shift in 2024), so  turned it into a google form. One of the people that needs to reference this needs it as a PDF, so I found a software that let me automatically turn it into a pdf & email it... which worked great until they wanted me to pay $100 a month for it, so i rebuilt it from scratch. Now we can see who worked what hours on what shifts, easily look for issues, and still have the PDF versions for end of fiscal year."
   },

@@ -215,6 +215,10 @@ form textarea, form input {
   border-radius: 5px;
   color: black;
   font-size: 12px;
+  background-color: var(--dark-goldenrod);
+}
+.flipbtn:hover {
+background-color: var(--cardinal);
 }
 
 .flip-card {

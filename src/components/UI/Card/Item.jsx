@@ -37,6 +37,8 @@ function Item(props) {
 height: `${cardHeight}px`,
             }
 
+            let moreInfo = project.more || "This is where more info about this project will go!"
+
           return (
             <Col md="6" key={project.id}>
               <ReactCardFlip isFlipped={flip} flipDirection="vertical">
@@ -100,11 +102,11 @@ height: `${cardHeight}px`,
               </Card>
               <Card className="portfolioCard flip-card" style={sameHeight}>
 
-                This is where more information about each project will go! 
+              {moreInfo} 
                 
               <div className="flip-btn-div">
                   <button className="flipbtn" onClick={() => setFlip(!flip)}>
-          Flip for more info
+          Flip to go back
         </button>
                   </div>
               </Card>

@@ -38,6 +38,7 @@ const portfolio = [
     repo: "https://github.com/hestrain/Paprika-Care-Guide",
     live: "https://paprika-care-guide-1.onrender.com/",
     img: "/images/paprika screencap.png",
+    more: "I made this for my partner to use while I was out of town & leaving her with the dog for the first time. I used it tto try out a lot of the react features for using props on the page. It also taught me how to embed a youtube video onto a page, and conditionally render based on props"
   },
   {
     id: 7,
@@ -49,6 +50,7 @@ const portfolio = [
     repo: "https://github.com/hestrain/Gdrive-Form-Sheet-Pdf-Email",
     live: "",
     gif: "/images/form2PDF.gif",
+    more: "Born out of necessity. My workplace was using a word doc from 2011 to do front of house and stage supervisor reports for the events. The staff were finding it very hard to use on their phone (as no one brings laptops to the shift in 2024), so  turned it into a google form. One of the people that needs to reference this needs it as a PDF, so I found a software that let me automatically turn it into a pdf & email it... which worked great until they wanted me to pay $100 a month for it, so i rebuilt it from scratch. Now we can see who worked what hours on what shifts, easily look for issues, and still have the PDF versions for end of fiscal year."
   },
   {
     id: 3,
@@ -60,6 +62,7 @@ const portfolio = [
     live: "https://hestrain.github.io/mov.ie/",
     img: "/images/movie-screencap.png",
     gif: "/images/mov.ie.gif",
+    more:"The first group project from my bootcamp. I did all the javascript on it, I'd love to go back and redo this one when I have time."
   },
   {
     id: 5,

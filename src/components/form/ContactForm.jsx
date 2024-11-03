@@ -45,12 +45,15 @@ const [userName, setUserName] = useState("");
       </Button>
 
       <Modal size="lg" show={show} onHide={handleClose}>
-        <Modal.Header closeButton className='lightBG'>
-          <Modal.Title>Contact Form</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
 
-        <div className='lightBG' >
+
+        <div className='lightBG modalColor' >
+          <div style={{textAlign:"right"}}>
+          <Button variant="secondary" onClick={handleClose} >
+            Close
+          </Button>
+          </div>
+          <h4>Use the form below to email me directly!</h4>
       <form onSubmit={handleSubmit(onSubmit)} className='contactForm'>
         <label for="cName">Name</label>
         <input id="cName" onChange={e => setUserName(e.target.value)} {...register("name", {required: true})} style={{color:"black"}} type="text" name="name" required/>
@@ -65,13 +68,6 @@ const [userName, setUserName] = useState("");
       <div>{result}</div>
 
     </div>
-
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
       </Modal>
     </>
   );

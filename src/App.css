@@ -236,3 +236,12 @@ form textarea, form input {
   bottom: 2%;
   right: 2%;
 }
+
+.modalColor {
+border: solid 4px var(--cardinal);
+border-radius: 9px;
+}
+
+h4 {
+  text-align: center;
+}

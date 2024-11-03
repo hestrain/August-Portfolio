@@ -205,3 +205,34 @@ form textarea, form input {
 .langList {
   display: inline;
 }
+
+
+.flipbtn {
+  width: 150px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: black;
+  font-size: 12px;
+}
+
+.flip-card {
+  margin: 10px;
+  padding: 10px;
+  color: aliceblue;
+  transition: 0.3s ease-out;
+}
+
+.flip-card:hover {
+  border: solid 5px var(--dark-slate-gray);
+  cursor:var(--cardinal);
+  cursor:cell;
+}
+
+.flip-btn-div {
+  position: absolute;
+  text-align: right;
+  bottom: 2%;
+  right: 2%;
+}

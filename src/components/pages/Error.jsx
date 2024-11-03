@@ -1,8 +1,9 @@
-import React from "react";
 import { Container } from "react-bootstrap";
 import Footer from "../Footer"
+import React, { useState} from "react";
 
 export default function Error() {
+  const [flip, setFlip] = useState(false);
   return (
     <>
       <Container style={{ height: "100px" }}></Container>
@@ -24,7 +25,7 @@ export default function Error() {
           Click here to go back to safety
           </a>
         </p>
-      </Container>
+               </Container>
       <div style={{height:"200px"}}></div>
       <Footer />
     </>

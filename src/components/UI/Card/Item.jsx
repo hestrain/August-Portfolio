@@ -2,10 +2,15 @@ import Card from "react-bootstrap/Card";
 import { Col } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
-import React, { useState, } from "react";
+import React, { useState} from "react";
 import ReactCardFlip from "react-card-flip";
+import { useEffect } from "react";
+import { useRef } from "react";
 
 function Item(props) {
+
+
+
   return (
     <Container>
       <Row>
@@ -21,10 +26,21 @@ function Item(props) {
           let x = 1;
             const [flip, setFlip] = useState(false);
 
+            const [cardHeight, setCardHeight] = useState(0)
+            const ref = useRef(null)
+          
+            useEffect(() => {
+              setCardHeight(ref.current.clientHeight)
+            })
+
+            let sameHeight = {
+height: `${cardHeight}px`,
+            }
+
           return (
             <Col md="6" key={project.id}>
               <ReactCardFlip isFlipped={flip} flipDirection="vertical">
-              <Card className="portfolioCard" key={project.id}>
+              <Card className="portfolioCard flip-card" key={project.id} id={project.id} ref={ref}> 
                 <Card.Body>
                   <Card.Img
                     variant="top"
@@ -73,15 +89,24 @@ function Item(props) {
                   >
                     Live Site
                   </Card.Link>
+                  
+                  <br></br>
+                  <div className="flip-btn-div">
                   <button className="flipbtn" onClick={() => setFlip(!flip)}>
           Flip for more info
         </button>
+                  </div>
                 </Card.Body>
               </Card>
-              <Card>
-              <button className="flipbtn" onClick={() => setFlip(!flip)}>              
-              Flip for more info
-              </button>
+              <Card className="portfolioCard flip-card" style={sameHeight}>
+
+                This is where more information about each project will go! 
+                
+              <div className="flip-btn-div">
+                  <button className="flipbtn" onClick={() => setFlip(!flip)}>
+          Flip for more info
+        </button>
+                  </div>
               </Card>
               </ReactCardFlip>
             </Col>

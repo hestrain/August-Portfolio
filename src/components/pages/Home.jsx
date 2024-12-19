@@ -88,13 +88,13 @@ export default function Home() {
               >
                 <p>
                   Hello! I am <strong>HeatherEllen Strain</strong>{" "}
-                  <i>(she/they),</i> a production/stage manager and arts administrator currently working and living in Tio'tia:ke (Montreal).
+                  <i>(she/they),</i> a production/stage manager currently working and living in Tio'tia:ke (Montreal).
                 </p>
                 <p>
-                  I've always loved working with technology, having taken every programming course my high school offered. Out of high school I originally went into Theatre because I loved programming Lighting Boards. Once I was at Concordia University, I found my stride in stage management, loving both building complex detailed paperwork, and being able to lead a team through to a final polished production. I've been working in the Montreal Theatre scene for the last 10 years doing Stage Management and Production Coordination & Management.
+                  I've always loved working with technology, having taken every programming course my high school offered. Out of high school I originally went into theatre because I loved programming lighting boards. Once I was at Concordia University, I found my stride in stage management, loving both building complex detailed paperwork, and being able to lead a team through to a final polished production. I've been working in the Montreal Theatre scene for the last 10 years doing stage management and production coordination & management.
                 </p>{" "}
                 <p>
-                  I found myself missing programming, and decided to re-pursue my original passion for technology and coding. Following this instinct, I recently earned a certificate in Full Stack Web Development from the University of Toronto Coding Boot Camp.
+                  I found myself missing programming, and decided to re-pursue my original passion for technology and coding. Following this instinct, I recently earned a certificate in full stack web development from the University of Toronto Coding Boot Camp.
                 </p>
                 <p>
                   My strengths include explaining concepts to the non-technically-minded, building efficient systems, and breaking down big ideas into achievable goals.

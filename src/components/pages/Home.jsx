@@ -91,7 +91,7 @@ export default function Home() {
                   <i>(she/they),</i> a production/stage manager currently working and living in Tio'tia:ke (Montreal).
                 </p>
                 <p>
-                  I've always loved working with technology, having taken every programming course my high school offered. Out of high school I originally went into theatre because I loved programming lighting boards. Once I was at Concordia University, I found my stride in stage management, loving both building complex detailed paperwork, and being able to lead a team through to a final polished production. I've been working in the Montreal Theatre scene for the last 10 years doing stage management and production coordination & management.
+                  I've always loved working with technology, having taken every programming course my high school offered. Out of high school I originally went into theatre because I loved programming lighting boards. Once I was at Concordia University, I found my stride in stage management, loving both building complex detailed paperwork, and being able to lead a team through to a final polished production. I've been working in the Montreal theatre scene for the last 10 years doing stage management and production coordination & management.
                 </p>{" "}
                 <p>
                   I found myself missing programming, and decided to re-pursue my original passion for technology and coding. Following this instinct, I recently earned a certificate in full stack web development from the University of Toronto Coding Boot Camp.

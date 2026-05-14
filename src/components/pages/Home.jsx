@@ -39,7 +39,7 @@ export default function Home() {
           >
             HeatherEllen Strain
           </h1>
-          <h3 className="introText">Web Developer / Production Manager</h3>
+          <h3 className="introText">Production Coordinator / Sound Designer / Web Developer</h3>
         </div>
         {/* -------------------------links sections ------------------------------------*/}
         <div style={{ marginTop: "40px", backgroundColor: "#2F585Cff" }}>
@@ -90,7 +90,7 @@ export default function Home() {
                   Hello! I am <strong>HeatherEllen Strain</strong>{" "}
                   <i>(she/they),</i> a production/stage manager currently working and living in Tio'tia:ke (Montreal).
                 </p>
-                <p>
+                {/* <p>
                   I've always loved working with technology, having taken every programming course my high school offered. Out of high school I originally went into theatre because I loved programming lighting boards. Once I was at Concordia University, I found my stride in stage management, loving both building complex detailed paperwork, and being able to lead a team through to a final polished production. I've been working in the Montreal theatre scene for the last 10 years doing stage management and production coordination & management.
                 </p>{" "}
                 <p>
@@ -101,7 +101,7 @@ export default function Home() {
                 </p>
                 <p>
                   I am skilled at managing large scale productions, leading a team, and working under pressure.
-                </p>
+                </p> */}
               </div>
             </Col>
             <Col md="1"></Col>

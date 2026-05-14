@@ -40,6 +40,18 @@ const portfolio = [
     img: "/images/paprika screencap.png",
     more: "I made this for my partner to use while I was out of town & leaving her with the dog for the first time. I used it tto try out a lot of the react features for using props on the page. It also taught me how to embed a youtube video onto a page, and conditionally render based on props"
   },
+    {
+    id: 8,
+    title: "Ella Kohlmann Portfolio",
+    kind: "Solo",
+    description:
+      "A portfolio website for playwright Ella Kohlmann",
+    tools: ["Node.js", " Javascript"],
+    repo: "https://github.com/hestrain/ella-site",
+    live: "https://ellakohlmann.com/",
+    img: "/images/ellascreencap.png",
+    more: ""
+  },
   {
     id: 7,
     title: "Google form PDF Maker",
